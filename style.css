@@ -8,19 +8,34 @@
 .square {
   width: 40px;
   height: 40px;
+  position: relative;
 }
 
 .square svg {
   height: 30px;
   width: 30px;
   margin: 5px;
+  position: relative;
+  z-index: -9;
 }
+
+.path {
+  position: relative;
+  z-index: -10;
+}
+
+.piece {
+  position: relative;
+  z-index: 9;
+}
+
+
 
 .beige {
   background-color: rgb(224, 224, 216);
 }
 
-.blue {
+.brown {
   background-color: rgb(67, 108, 162);
 }
 
@@ -28,6 +43,6 @@
   fill: rgba(28, 28, 28, 0.842);
 }
 
-.gray {
+.white {
   fill: rgba(75, 72, 72, 0.873);
 }
